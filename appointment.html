@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home | AutoMob-Mechanic</title>
+        <title>Appointment | AutoMob-Mechanic</title>
         <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
@@ -35,7 +35,7 @@
 
         <section>
             <h1>Schedule Your Appointment</h1>
-            <form action="">
+            <form action="booking-success.html" method="get">
                 Appointment Date: <input type="date" name="appointment-date" required/> <br/><br/>
 
                 Address: <textarea name="address" rows="8" cols="35" required></textarea> <br/><br/>
@@ -52,22 +52,18 @@
                 </datalist> <br/><br/>
 
                 Send Notification: 
-                <input type="checkbox" name="send-notification" value="email" id="email">
+                <input type="checkbox" name="send-notification" value="email" id="email" required/>
                 <label for="email">Email</label>
-                <input type="checkbox" name="send-notification" value="sms" id="sms">
+                <input type="checkbox" name="send-notification" value="sms" id="sms"/>
                 <label for="sms">SMS</label>
                 <br/><br/>
+                
+                <button type="submit"><u>Book</u></button>
             </form>
         </section>
-
-        <br/>
-        <section>
-            <button>
-                <a href="booking-success.html"><u>Book</u></a>
-            </button>
-        </section>
-        <br/><br/>
+        <br/><br/><br/>
         <hr>
+
         <footer>
             <p>Copyright &copy; 2020 AutoMob-Mechanic. All Rights Reserved.</p>
         </footer>
